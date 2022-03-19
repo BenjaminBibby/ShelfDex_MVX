@@ -6,6 +6,15 @@ namespace ShelfDexMvx.Core.ViewModels.Main
 {
     public class MainViewModel : BaseViewModel
     {
-        public string Title { get; set; } = "Title";
+        private string _title;
+        public string Title
+        {
+            get => _title;
+            set
+            {
+                SetProperty(ref _title, value);
+                RaisePropertyChanged(_title);
+            }
+        }
     }
 }

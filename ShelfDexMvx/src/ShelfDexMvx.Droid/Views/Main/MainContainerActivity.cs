@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,4 +20,6 @@ namespace ShelfDexMvx.Droid.Views.Main
     {
         protected override int ActivityLayoutId => Resource.Layout.activity_main_container;
     }
+
+    
 }
