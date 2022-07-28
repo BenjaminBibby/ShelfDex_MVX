@@ -12,14 +12,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5"/>
-    <!--Lottie-->
-    <!--<com.airbnb.lottie.LottieAnimationView
-	android:id="@+id/animation_view"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	app:lottie_fileName="hello-world.json"
-	app:lottie_loop="true"
-	app:lottie_autoPlay="true" />-->
+    
+    <com.airbnb.lottie.LottieAnimationView
+	    android:id="@+id/animation_view"
+	    android:layout_width="200dp"
+	    android:layout_height="200dp"
+	    app:lottie_fileName="Assets/Lottie/ani_spinner.json"
+	    app:lottie_loop="true"
+	    app:lottie_autoPlay="true" 
+        app:layout_constraintBottom_toTopOf="@id/txt_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <TextView
         android:id="@+id/txt_welcome"
         android:layout_width="0dp"
@@ -41,4 +46,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press Me!"
+        app:layout_constraintTop_toBottomOf="@id/txt_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
