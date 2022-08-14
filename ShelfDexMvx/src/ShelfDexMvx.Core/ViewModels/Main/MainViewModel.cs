@@ -19,7 +19,7 @@ namespace ShelfDexMvx.Core.ViewModels.Main
         public IMvxInteraction<YesNoQuestion> Interaction => _interaction;
 
 
-        private void DoFinishProfilCommand()
+        public void DoFinishProfilCommand()
         {
             var request = new YesNoQuestion
             {
